@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Formación</title>
+        <title>Contacto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
         <link href="./Formacion/certificado-descripcion.css" rel="stylesheet">
         <link href="./Formacion/certificado-boton.css" rel="stylesheet">
         <link href="./footer.css" rel="stylesheet">
+        <link href="./contacto/contacto-imagen.css" rel="stylesheet">
         
         
         
@@ -34,7 +35,7 @@
     <body>
         <header class="cabecera">
             <div>
-                <h1 class="header__titulo">Formación</h1>
+                <h1 class="header__titulo">Contacto</h1>
                 <nav class="menu">
                     <ul class="menu-lista">
                     <li class="menu-item"><a class="header__link" href="index.html">Inicio</a></li>
@@ -43,47 +44,63 @@
                     <li class="menu-item"><a class="header__link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-    
             </div>
         </header>
+    <main>
+        <section class="contacto">
+            <img src="./imagenes/contacto.jpg" alt="Contactate" class="contacto-imagen">
+            <div class="contactos">
+                <form>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" class="input-padron" required>
+            
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+            
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXXX XXXXX" >
 
-        <main>
-            <h2 class="titulo-principal">Formación</h2>
-            <section class="certificados">
-                <div class="certificado">
-                    <img src="certificados/certificado1a.jpg" class="formacion-imagen" />
-                    <div class="certificado-contenido">
-                        <h4 class="certificado-titulo">Curso Lógica de Programación</h4>
-                        <p class="certificado-descripcion">Curso lógica de programacion a través del lenguaje Javascript, variables, operadores ,funciones, loops, arrays, estilos, diseño con Canvas, capturar eventos, requesisiones Ajax, eliminacion delegacion y animacion, Git y Github</p>
-                        <a class="link" href="visualizarPDF-logica.html"><input type="button" value="Ver Certificado Completo" class="certificado-boton"></a>
-                    </div>
-                </div>
-                <div class="certificado">
-                    <img src="certificados/certificado2a.jpg" class="formacion-imagen" />
-                    <div class="certificado-contenido">
-                        <h4 class="certificado-titulo">Curso Business Agility</h4>
-                        <p class="certificado-descripcion">Método ágil, método cascada, priorización, flujo de ejecución, retroalimentacion, Manifiesto ágil, Estructura de organización de una empresa ágil, enfoque en la generacion de valor, VUCA, motivacion, liderazgo, Empoderar y delegar, tipos de equipos agiles, equipos kanban</p>
-                        <a class="link" href="visualizarPDF-business-agility.html"><input type="button" value="Ver Certificado Completo" class="certificado-boton"></a>
-                    </div>
-                </div>
-            </section>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                
+
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                
+
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>¿En cuál horario prefiere ser atendido?</legend>
+                        <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                        </select>
+
+                    </fieldset>
 
 
-        </main>
+                </form>
+            
 
+            </div>
+        </section>
+    </main>
         <footer class="footer">
             <p class="parrafo-footer"><strong>Desarrollado por Lautaro Rodriguez</strong> </p>
-            <form class="botones-footer-formacion">
+            <form class="botones-footer">
                 <a class="link" href="https://www.linkedin.com/in/lautaro-rodriguez-36a86714a/"><input type="button" value="Linkedin" class="link-boton"></a>
                 <a class="link" href="https://www.instagram.com/lautaro.gringo/"><input type="button" value="Instagram" class="link-boton"></a>
                 <a class="link" href="https://github.com/LautaroHKL?tab=repositories"><input type="button" value="GitHub"  class="link-boton"></a>
                 <a class="link" href="https://drive.google.com/file/d/1LZXw7G-S5bPN6b-4ikAMKx1500U1dau0/view?usp=sharing"><input type="button" value="CV"  class="link-boton"></a>
             </form>
         </footer>
-
-
-
-
-       
-
-        
+    </body>    

@@ -1,0 +1,33 @@
+.contacto-imagen{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5rem;
+    padding: 3rem;
+}
+
+.contactos{
+    height: 150%;
+    width: 100%;
+}
+
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.input-padron{
+    display: block;
+    padding: 10px 25px;
+    width: 30%;
+}
+
+.contacto{
+    height: 100%;
+    margin: 0px 0px 50px;
+}
