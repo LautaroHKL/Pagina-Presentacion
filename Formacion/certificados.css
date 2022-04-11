@@ -1,0 +1,5 @@
+.certificados{
+    background: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+}
