@@ -1,5 +1,5 @@
 .datos-personales{
-    background: #F5F1EB;
+    background: linear-gradient(to bottom, #119DC0, white);
     padding: 0 0 5em;
 }
 
@@ -8,6 +8,8 @@
     font-size: 3rem;
     padding: 3rem;
     font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .foto{

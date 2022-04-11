@@ -1,6 +1,8 @@
 .skill__a1{
     background: #0388A9;
+    border: 2px double #000000;
     margin-left: 5rem;
     margin-bottom: 10rem;
-    padding: 3rem;
+    padding: 4rem;
+    
 }
