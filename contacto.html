@@ -33,6 +33,7 @@
         <link href="./Formacion/certificado-boton.css" rel="stylesheet">
         <link href="./footer.css" rel="stylesheet">
         <link href="./contacto/contacto-imagen.css" rel="stylesheet">
+        <link href="./contacto/contacto-formulario.css" rel="stylesheet">
         
         
         
@@ -54,46 +55,73 @@
         </header>
     <main>
         <section class="contacto">
-            <img src="./imagenes/contacto.jpg" alt="Contactate" class="contacto-imagen">
+            
             <div class="contactos">
-                <form>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" id="nombre" class="input-padron" required>
-            
-                    <label for="correo">Correo Electrónico</label>
-                    <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
-            
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXXX XXXXX" >
+                <form action="" class="formulario-contacto" id="formulario">
+                   <div class="fomuluario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre y Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre"  id="nombre" required>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre no puede llevar numeros ni simbolos, solo espacios</p>
+                   </div>
+                   <div class="fomuluario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" required placeholder="email@dominio.com">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">el correo solo puede contener letras, numeros, puntos, guiones y guion bajo</p>
 
-                    <label for="mensaje">Mensaje</label>
-                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                   </div>
+                   <div class="fomuluario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="tel"  class="formulario__input" name="telefono" id="telefono" required placeholder="(XX) XXXXX XXXXX">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">Solo se aceptan numeros hasta 14 digitos</p>
+                   </div>
+                   <div class="fomuluario__grupo" id="grupo__mensaje">
+                        <label for="mensaje" class="formulario__label">Mensaje</label>
+                        <div class="formulario__grupo-input">
+                            <textarea cols="70" rows="10" id="mensaje" class="formulario__input" name="mensaje" required></textarea>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">El mensaje no puede estar en blanco</p>
+                   </div>
+                        <fieldset>
+                            <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
-                    <fieldset>
-                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
 
-                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
 
-                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+                        </fieldset>
 
-                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
-                
-                    </fieldset>
+                        <fieldset>
 
-                    <fieldset>
+                            <legend>¿En cuál horario prefiere ser atendido?</legend>
+                            <select>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                            </select>
 
-                        <legend>¿En cuál horario prefiere ser atendido?</legend>
-                        <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                        </select>
+                        </fieldset>
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellene el formulario correctamente. </p>
+                        </div>
 
-                    </fieldset>
-
-
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="boton-enviar formulario__btn"> Enviar Formulario</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>    
                 </form>
             
 
@@ -109,4 +137,6 @@
                 <a class="link" href="https://drive.google.com/file/d/1LZXw7G-S5bPN6b-4ikAMKx1500U1dau0/view?usp=sharing"><input type="button" value="CV"  class="link-boton"></a>
             </form>
         </footer>
+        <script src="./js/script.js"></script>
+        <script src="https://kit.fontawesome.com/26d339b524.js" crossorigin="anonymous"></script>
     </body>    
