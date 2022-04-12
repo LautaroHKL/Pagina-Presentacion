@@ -1,5 +1,5 @@
 .datos-personales{
-    background: linear-gradient(to bottom, #119DC0, white);
+    background: linear-gradient(to right, #446168, white);
     padding: 0 0 5em;
 }
 
@@ -51,5 +51,5 @@ strong{
 }
 
 main{
-    background: linear-gradient(to bottom, #119DC0, white);
+    background: linear-gradient(to right, #446168, white);
 }

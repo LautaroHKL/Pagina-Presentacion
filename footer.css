@@ -2,10 +2,11 @@
 
 footer{
     background-image: url("./imagenes/header.jpg");
-    padding: 10em;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     height: 100%;
-    background-repeat: none;
+    padding-top: 6rem;
 }
 
 .parrafo-footer{
@@ -15,23 +16,7 @@ footer{
 }
 
 .botones-footer{
-    position: absolute;
-    right: 30%;
-    left: 50%;
-    bottom: 60%;
-    top: 115%;
+    vertical-align: center;
 }
 
 /*Footer skill and hobbies*/
-
-.botones-footer-skill-y-hobbies{
-    position: absolute;
-    left: 50%;
-}
-
-
-.botones-footer-formacion{
-    position: absolute;
-    top: 222%;
-    left: 50%;
-}
